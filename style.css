@@ -1,0 +1,38 @@
+/*Police*/
+/* <weight>: Use a value from 100 to 1000
+<uniquifier>: Use a unique and descriptive class name*/
+
+.roboto-flex-uniquifier {
+  font-family: "Roboto Flex", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
+}
+
+
+.bg-body {
+    background-color: #130f10;
+}
+
+.anim1 {
+
+    transition-property: transform;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+}
+
+.anim1:hover {
+    transform: scale(1.1)
+}
