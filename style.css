@@ -2,26 +2,14 @@
 /* <weight>: Use a value from 100 to 1000
 <uniquifier>: Use a unique and descriptive class name*/
 
-.roboto-flex-uniquifier {
-  font-family: "Roboto Flex", sans-serif;
+
+
+.inter-uniquifier {
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
-  font-variation-settings:
-    "slnt" 0,
-    "wdth" 100,
-    "GRAD" 0,
-    "XOPQ" 96,
-    "XTRA" 468,
-    "YOPQ" 79,
-    "YTAS" 750,
-    "YTDE" -203,
-    "YTFI" 738,
-    "YTLC" 514,
-    "YTUC" 712;
 }
-
-
 .anim1 {
 
     transition-property: transform;
@@ -132,13 +120,16 @@ body {
 }
 .navbar-brand {
   color: #fff;
-  justify-self: center;
+  justify-self: start;
 }
 
 .main-header .navbar-brand img {
   max-width: 15rem;
   animation: fadeInLeft 0.4s both 0.4s;
 
+}
+.souligne{
+    margin-right: 0%;
 }
 /* main-header end */
 @media (max-width: 991px) {
@@ -148,6 +139,9 @@ body {
     padding: 0;
     clear: both;
   }
+.logo_brand img {
+    width: 40%;
+}
 
   .navbar-toggler {
     margin: 0;
@@ -167,6 +161,7 @@ body {
     width: 100%;
     padding-left: 0;
     padding-right: 0;
+    margin: 0;
     text-align: center;
   }
 
@@ -182,7 +177,7 @@ body {
 
   .main-header .navbar-toggler .icon-bar {
     background-color: #fff;
-    margin: 0 auto 6px;
+    margin: 0px;
     border-radius: 0;
     width: 30px;
     height: 3px;
@@ -226,7 +221,7 @@ body {
   }
 
   .main-header .current .icon-bar-3 {
-    width: 10px;
+    width: 0px;
   }
 
   .main-header .navbar-toggler:hover .icon-bar {
@@ -238,6 +233,10 @@ body {
   }
 
   /*header ends*/
+
+  .anim1:hover {
+    transform: none;
+}
 }
 
 
@@ -248,17 +247,18 @@ body {
  justify-self: center;
 }
 .color-card{
-    background-color:#1e1e29 ;
+    background-color:#1e1e29;
 }
 .carousel-caption {
     justify-self: center;
   left: 0;
   right: 0;
-  width: 30%;
+  width: 23%;
   bottom: 20px;
   padding-left: 0;
   padding-right: 0;
   box-sizing: border-box;
+  border-radius: 5%;
 }
 .btn{
     background-color: #286628;
