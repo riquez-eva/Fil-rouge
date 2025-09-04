@@ -239,6 +239,12 @@ body {
 }
 }
 
+/* Masquer la barre de recherche + les horaires superposés en version mobile */
+@media (max-width: 991px) {
+  .desktop-over-image {
+    display: none !important;
+  }
+}
 
 /*les slides*/
 
@@ -263,4 +269,14 @@ body {
 .btn{
     background-color: #286628;
     border: #455f45;
+}
+
+/*Les catégories*/
+
+.category_title{
+  border:solid #455f45;
+  border-radius: 5%;
+  margin: 10% 30%;
+  padding: 3%;
+  justify-self: center;
 }

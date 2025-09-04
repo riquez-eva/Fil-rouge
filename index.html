@@ -24,9 +24,9 @@
         <div class="container-fluid">
             <nav class="navbar navbar-expand-lg main-nav">
                 <div class="logo_brand">
-                <a class="navbar-brand" href="/mojo">
-                    <img src="img/logo_transparent_vert.png" alt="logo restaurant" />
-                </a>
+                    <a class="navbar-brand" href="/mojo">
+                        <img src="img/logo_transparent_vert.png" alt="logo restaurant" />
+                    </a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
                     aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -62,6 +62,13 @@
                                         d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
                                 </svg></a>
                         </li>
+                        <li class="d-block d-lg-none m-3">
+                            <form class="d-flex bg-white bg-opacity-75 p-2 rounded shadow" role="search">
+                                <input class="form-control form-control-sm me-2" type="search" placeholder="Recherche"
+                                    aria-label="Search" />
+                                <button class="btn btn-success btn-sm" type="submit">OK</button>
+                            </form>
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -69,32 +76,42 @@
         <!-- /.container -->
     </header>
 
-    <div class="p-5">
+    <div class="p-5 desktop-over-image">
         <!--Espace vide temporaire(?) pour laisser la navbar lisible en début de page-->
     </div>
-    <div class="p-5">
+    <div class="p-5 ">
         <!--Espace vide temporaire(?) pour laisser la navbar lisible en début de page-->
     </div>
     <section class="container-fluid p-0">
-        <div class="position-relative d-flex justify-content-center my-5">
+        <div class="position-relative my-5 section-over-image">
+            <img src="img/bg1.jpeg" class="custom-img rounded shadow container-fluid" alt="Image principale">
 
-            <!-- Image plus grande -->
-            <img src="img/bg2.jpeg" class="custom-img rounded shadow container-fluid" alt="Image principale">
+            <!-- Tout ce bloc sera masqué en mobile -->
+            <div
+                class="desktop-over-image position-absolute top-50 start-0 w-100 translate-middle-y d-flex justify-content-between px-5">
+                <!-- Bloc horaires -->
+                <div class="bg-white bg-opacity-75 p-3 rounded shadow" style="max-width:300px;">
+                    <p class="mb-0 text-dark">
+                        <strong>Horaires :</strong><br>
+                        Lundi : Fermé<br>
+                        Mardi‑Samedi : 11h‑13h & 18h‑20h30<br>
+                        Dimanche : 11h‑13h
+                    </p>
+                </div>
 
-            <!-- Barre de recherche superposée au centre, plus petite -->
-            <div class="position-absolute top-50 translate-middle-y ms-5 container-fluid" style="width: 50%;">
-                <form class="d-flex bg-white bg-opacity-75 p-2 rounded shadow" role="search">
+                <!-- Barre de recherche -->
+                <form class="d-flex bg-white bg-opacity-75 p-2 rounded shadow" style="max-width:300px;" role="search">
                     <input class="form-control form-control-sm me-2" type="search" placeholder="Recherche"
                         aria-label="Search" />
                     <button class="btn btn-success btn-sm" type="submit">OK</button>
                 </form>
             </div>
-
         </div>
     </section>
 
+
     <main class="container-fluid">
-        <h2 class="text-center">Nos plats populaires</h2>
+        <h2 class="category_title text-center fs-3">Nos plats populaires</h2>
 
         <div id="carouselExampleCaptions" class="carousel slide container-fluid">
             <div class="carousel-indicators">
@@ -108,7 +125,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="slide-plats">
-                        <img src="img/food/hamburger_modified.jpg" class="d-block w-100 rounded-4" alt="...">
+                        <img src="img/food/hamburger_modified.jpg" class="d-block w-100 rounded-4 anim1" alt="...">
                     </div>
                     <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
                         <h5>Ham Boogie</h5>
@@ -118,7 +135,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="slide-plats">
-                        <img src="img/food/spaghetti_legumes_modified.jpg" class="d-block w-100 rounded-4" alt="...">
+                        <img src="img/food/spaghetti_legumes_modified.jpg" class="d-block w-100 rounded-4 anim1" alt="...">
                     </div>
                     <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
                         <h5>Veggie Sphaggi</h5>
@@ -128,7 +145,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="slide-plats">
-                        <img src="img/food/pizza_margherita_modified.jpg" class="d-block w-100 rounded-4" alt="...">
+                        <img src="img/food/pizza_margherita_modified.jpg" class="d-block w-100 rounded-4 anim1" alt="...">
                     </div>
                     <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50">
                         <h5>Margheritzi</h5>
@@ -149,13 +166,13 @@
             </button>
         </div>
 
+        <h3 class="category_title text-center">Consulter notre carte</h3>
 
-
-        <article class="row p-5 justify-content-center container-fluid">
+        <article class="row px-5 mt-5 justify-content-center container-fluid">
             <article class="col-12 col-md-auto mx-5 mb-4 anim1">
                 <div class="card bg-secondary text-light" style="width: 18rem;">
                     <div class="m-2">
-                        <img src="img/category/asian_food_cat _ Modified.jpg" class="card-img-top shadow" alt="...">
+                        <img src="img/category/asian_food_cat _ Modified.jpg" class="card-img-top shadow " alt="...">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Asia</h5>
@@ -189,7 +206,7 @@
                     </div>
             </article>
         </article>
-        <article class="row p-5 justify-content-center">
+        <article class="row px-5 justify-content-center container-fluid">
             <article class="col-12 col-md-auto mx-5 mb-4 anim1">
                 <div class="card bg-secondary text-light" style="width: 18rem;">
                     <div class="m-2">
@@ -299,6 +316,14 @@
             <a class="text-light" href="#">Politique de Confidentialité</a><br>
             <a class="text-light" href="#">Service après-vente</a><br>
             <a class="text-light" href="#">Nous contacter</a>
+            <div class="d-block d-lg-none text-center text-light p-3">
+                <p class="mb-0">
+                    <strong>Horaires :</strong><br>
+                    Lundi : Fermé<br>
+                    Mardi‑Samedi : 11h ‑ 13h & 18h ‑ 20h30<br>
+                    Dimanche : 11h - 13h
+                </p>
+            </div>
             <p>&copy; 2025 The District. Tous droits réservés.</p>
 
         </div>
